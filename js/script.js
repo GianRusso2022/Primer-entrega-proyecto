@@ -1,4 +1,4 @@
-const SERVICIOS = [
+const servicioss = [
     {
         id: "1",
         nombre: "Paseo individual",
@@ -64,14 +64,24 @@ const obtenerTotal = (serviciosArray) => {
 }
 
 // start
-const servicios = SERVICIOS.map(servicio => new Servicio(
-    servicio.id,
-    servicio.nombre,
-    servicio.precio,
-));
+// const servicios = servicioss.map(servicio => new Servicio(
+//     servicio.id,
+//     servicio.nombre,
+//     servicio.precio,
+// ));
 
-agregarAlCarritoById(servicios);
-imprimirCarrito(carrito);
-console.log("TOTAL: $", obtenerTotal(carrito));
-alert("Abre la consola para ver el presupuesto");
+// agregarAlCarritoById(servicios);
+// imprimirCarrito(carrito);
+// console.log("TOTAL: $", obtenerTotal(carrito));
+// alert("Abre la consola para ver el presupuesto");
+
+/*Eventos*/
+
+
+const inputColor = document.getElementById("inputColor")
+
+inputColor.addEventListener("change", () => {
+    document.body.style.backgroundColor = inputColor.value
+    
+})
 
